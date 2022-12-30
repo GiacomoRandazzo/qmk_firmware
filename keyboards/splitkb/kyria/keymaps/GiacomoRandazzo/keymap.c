@@ -70,7 +70,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * |  Esc   |   A/ |   S/ |   D/ |   F/ |   G  |                              |   H  |   J/ |   K/ |   L/ | ;  :/|  '  "  |
  * |        | LGUI | LAlt | LCtl |LShift|      |                              |      |RShift| RCtl | RAlt | RGUI |        |
  * |--------+------+------+------+------+------+-------------.  ,-------------+------+------+------+------+------+--------|
- * | `/LCtl |   Z  |   X  |   C  |   V  |   B  |      |      |  |      |      |   N  |   M  | ,  < | . >  | /  ? |  =  +  |
+ * |    `   |   Z  |   X  |   C  |   V  |   B  |      |      |  |      |      |   N  |   M  | ,  < | . >  | /  ? |  =  +  |
  * `----------------------+------+------+------| Spc/ | OSM  |  |Enter/| Bksp/|------+------+------+----------------------'
  *                        |   )  |   (  | LGUI |  Nav |LShift|  |   Sym|   Num| Del/ | [  { | ]  } |
  *                        |      |      |      |      |      |  |      |      |  Fun |      |      |
@@ -79,7 +79,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [_QWERTY] = LAYOUT(
      HPR_TAB,  KC_Q,  KC_W,  KC_E,    KC_R,    KC_T,                                              KC_Y,   KC_U ,    KC_I,  KC_O ,    KC_P,  KC_MINS,
       KC_ESC, GUI_A, ALT_S, CTL_D,   SFT_F,    KC_G,                                              KC_H,   SFT_J,   CTL_K,  ALT_L, GUI_SCLN, KC_QUOT,
-      CTL_GRV,  KC_Z,  KC_X,  KC_C,    KC_V,    KC_B,  XXXXXXX,  XXXXXXX,    XXXXXXX,  XXXXXXX,    KC_N,   KC_M , KC_COMM, KC_DOT,  KC_SLSH,  KC_EQL,
+      KC_GRV,  KC_Z,  KC_X,  KC_C,    KC_V,    KC_B,  XXXXXXX,  XXXXXXX,    XXXXXXX,  XXXXXXX,    KC_N,   KC_M , KC_COMM, KC_DOT,  KC_SLSH,  KC_EQL,
                           KC_RPRN, KC_LPRN, KC_LGUI,  NAV_SPC,  OSM_SFT,    SYM_ENT, NUM_BKSP, FUN_DEL, KC_LBRC, KC_RBRC
     ),
 
