@@ -197,6 +197,8 @@ uint16_t get_tapping_term(uint16_t keycode, keyrecord_t *record) {
     switch (keycode) {
         case GUI_A:
             return TAPPING_TERM + 20;
+        case ALT_S:
+            return TAPPING_TERM + 20;
         default:
             return TAPPING_TERM;
     }
