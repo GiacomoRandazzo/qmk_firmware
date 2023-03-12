@@ -1,14 +1,27 @@
-### Flashing
+## Features
+
+-   Miryoku inspired
+-   [home-row mods](https://precondition.github.io/home-row-mods)
+-   one-shot [⇧] in left thumb, double tap to caps-word
+-   double role tap [⌘ ␣] and hold [⌘] in left thumb
+-   [Achordion](https://getreuer.info/posts/keyboards/achordion/index.html)
+-   [Select Word](https://getreuer.info/posts/keyboards/select-word/index.html)
+-   additional backspace on the left thumb for mouse use
+
+## Flashing
 
 -   Flash both halves
 -   Enter bootloader mode by pressing the keyboard reset button
 -   Run
 
+The Kyria uses an Elite-PI microcontroller, running `qmk flash` will not work.
+
 ```
-qmk flash -c -e CONVERT_TO=elite_pi
+qmk compile -kb kyria -km GiacomoRandazzo
+qmk flash -c -kb kyria -km GiacomoRandazzo -e CONVERT_TO=elite_pi
 ```
 
 ### Refs
 
--   (which half to flash) https://docs.splitkb.com/hc/en-us/articles/360011949679-When-do-I-need-to-flash-my-microcontroller-
+-   (Which half to flash) https://docs.splitkb.com/hc/en-us/articles/360011949679-When-do-I-need-to-flash-my-microcontroller-
 -   (Elite PI) https://docs.keeb.io/elite-pi-guide

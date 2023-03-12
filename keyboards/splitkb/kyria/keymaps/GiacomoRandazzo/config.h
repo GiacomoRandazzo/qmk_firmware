@@ -16,6 +16,27 @@
 
 #pragma once
 
+// #: One-shot shift
+
+#define ONESHOT_TIMEOUT 500
+// Caps-word on double tap
+#define DOUBLE_TAP_SHIFT_TURNS_ON_CAPS_WORD
+
+// #: Tap-hold
+
 #define IGNORE_MOD_TAP_INTERRUPT
-#define TAPPING_TERM 200
+#define TAPPING_TERM 180
 #define TAPPING_TERM_PER_KEY
+
+// Enable `PERMISSIVE_HOLD` to allow nested taps to activate the hold function.
+// Refs: https://precondition.github.io/home-row-mods#permissive-hold
+#define PERMISSIVE_HOLD
+
+// Don't enable `TAPPING_FORCE_HOLD` to allow tap+hold to repeat tapped key.
+// Refs: https://preconditidon.github.io/home-row-mods#tapping-force-hold
+// #define TAPPING_FORCE_HOLD
+
+// #: Misc
+
+// Refs: https://getreuer.info/posts/keyboards/select-word/index.html
+#define SELECT_WORD_TIMEOUT 2000
