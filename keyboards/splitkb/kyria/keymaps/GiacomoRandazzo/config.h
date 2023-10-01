@@ -19,8 +19,8 @@
 // #: One-shot shift
 
 #define ONESHOT_TIMEOUT 500
-// Caps-word on double tap
-#define DOUBLE_TAP_SHIFT_TURNS_ON_CAPS_WORD
+// Caps-lock on double tap
+#define ONESHOT_TAP_TOGGLE 2
 
 // #: Tap-hold
 

@@ -2,11 +2,12 @@
 
 -   Miryoku inspired
 -   [home-row mods](https://precondition.github.io/home-row-mods)
--   one-shot [⇧] in left thumb, double tap to caps-word
+-   one-shot [⇧] in left thumb, double tap to caps-lock
 -   double role tap [⌘ ␣] and hold [⌘] in left thumb
 -   [Achordion](https://getreuer.info/posts/keyboards/achordion/index.html)
 -   [Select Word](https://getreuer.info/posts/keyboards/select-word/index.html)
 -   additional backspace on the left thumb for mouse use
+-
 
 ## Flashing
 
@@ -17,8 +18,8 @@
 The Kyria uses an Elite-PI microcontroller, running `qmk flash` will not work.
 
 ```
-qmk compile -kb kyria -km GiacomoRandazzo
-qmk flash -c -kb kyria -km GiacomoRandazzo -e CONVERT_TO=elite_pi
+qmk compile -kb splitkb/kyria/rev2 -km GiacomoRandazzo
+qmk flash -c -kb splitkb/kyria/rev2 -km GiacomoRandazzo -e CONVERT_TO=elite_pi
 ```
 
 ### Refs
